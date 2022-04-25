@@ -1,7 +1,7 @@
 FROM almalinux:latest
 
 RUN yum update -y \
-    && yum install epel-release \
+    && yum install -y epel-release \
     && yum install -y nodejs npm yamllint \
     && yum clean all
 
