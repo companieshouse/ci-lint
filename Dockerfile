@@ -1,10 +1,7 @@
-FROM centos:centos7.9.2009
+FROM almalinux:latest
 
 RUN yum update -y \
-    && yum install -y epel-release \
-    && yum clean all
-
-RUN yum install -y nodejs npm \
+    && yum install -y nodejs npm \
     && yum clean all
 
 RUN npm install jsonlint -g
