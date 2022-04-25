@@ -1,7 +1,7 @@
 FROM almalinux:latest
 
 RUN yum update -y \
-    && yum install -y nodejs npm \
+    && yum install -y nodejs npm yamllint \
     && yum clean all
 
 RUN npm install jsonlint -g
